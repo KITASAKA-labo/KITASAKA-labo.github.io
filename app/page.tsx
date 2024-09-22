@@ -22,7 +22,7 @@ export default async function Home() {
       {/* News Section */}
       <section id="news" className="w-full mt-24">
         <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg">News</h2>
-        <Newscardlist newsData={newsData}/>
+        <Newscardlist newsData={[newsData]}/>
         <div className="text-right mr-[10%] mt-8">
           <Link href="/news" className="text-xl font-semibold hover:text-blue-500 transition-colors">See more→</Link>
         </div>
