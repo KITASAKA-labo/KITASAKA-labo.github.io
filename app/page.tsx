@@ -22,7 +22,7 @@ export default async function Home() {
         </div>
         <div id="top1" className="absolute top-0 left-0 w-full h-full">
           <Image
-            src="/images/top/topimg1.png"
+            src="./images/top/topimg1.png"
             alt="Top image 1"
             layout="fill"
             objectFit="cover"
