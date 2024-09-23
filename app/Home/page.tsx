@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { NEWSData } from './types/types'
-import Newscardlist from './components/newslist/Newscardlist'
-import prisma from '../lib/prismaClient'
+import { NEWSData } from '../types/types'
+import Newscardlist from '../components/newslist/Newscardlist'
+import prisma from '../../lib/prismaClient'
 
 async function getNewsData() {
   const newsData = await prisma.news.findMany()
@@ -19,7 +19,7 @@ export default async function Home() {
         <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg">News</h2>
         <Newscardlist newsData={newsData}/>
         <div className="text-right mr-[10%] mt-8">
-          <Link href="./Home" className="text-xl font-semibold hover:text-blue-500 transition-colors">See more→</Link>
+          <Link href="/news" className="text-xl font-semibold hover:text-blue-500 transition-colors">See more→</Link>
         </div>
       </section>
       
