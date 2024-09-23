@@ -14,6 +14,23 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-6 md:p-24">
+
+      <div id="bodyTitle" className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+        <div className="Title text-center mb-8">
+          <h1 className="text-4xl md:text-6xl font-bold mb-2">北坂研究室</h1>
+          <h3 className="text-xl md:text-2xl">Medical Image Processing Laboratory</h3>
+        </div>
+        <div id="top1" className="absolute top-0 left-0 w-full h-full">
+          <Image
+            src="/images/top/topimg1.png"
+            alt="Top image 1"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+        </div>
+        </div>
+
       {/* News Section */}
       <section id="news" className="w-full mt-24">
         <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg">News</h2>
