@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { NEWSData } from '../types/types'
+import { GALLERYData } from '../types/types'
 import Newscardlist from '../components/newslist/Newscardlist'
 import prisma from '../../lib/prismaClient'
 
