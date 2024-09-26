@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { NEWSData } from './types/types'
 import Newscardlist from './components/newslist/Newscardlist'
 import prisma from '../lib/prismaClient'
-import topImage1 from './images/top/topimg1.png'
 
 async function getNewsData() {
   const newsData = await prisma.news.findMany()
