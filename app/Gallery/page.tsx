@@ -21,7 +21,7 @@ export default async function Home() {
         <Gallerylist galleryData={galleryData}/>
       </div>
 
-      <div className="bottun fixed right-[3vw] bottom-[5vh] text-center">
+      {/* <div className="bottun fixed right-[3vw] bottom-[5vh] text-center">
         <button
           id="upBtn"
           className="w-10 h-10 mb-2 bg-gray-800 text-white rounded-full cursor-pointer hover:bg-gray-700 transition-colors"
@@ -38,7 +38,7 @@ export default async function Home() {
         >
           ↓
         </button>
-      </div>
+      </div> */}
 
       {/* Footer */}
       <footer className="w-full mt-36 pt-8 border-t border-gray-300 text-center">
