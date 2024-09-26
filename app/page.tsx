@@ -21,7 +21,8 @@ export default async function Home() {
           <h1 className="text-4xl md:text-6xl font-bold mb-2">北坂研究室</h1>
           <h3 className="text-xl md:text-2xl ">Medical Image Processing Laboratory</h3>
         </div>
-        <div id="top1" className="absolute flex top-0 left-0 w-screen h-screen z-1">
+        </div>
+        <div id="top1" className="absolute top-0 left-0 w-screen h-screen z-1">
           <Image
             src={"https://github.com/KITASAKA-labo/KITASAKA-labo.github.io/blob/main/app/images/top/topimg1.png?raw=true"}
             alt="Top image 1"
@@ -29,7 +30,6 @@ export default async function Home() {
             objectFit="cover"
             priority
           />
-        </div>
         </div>
 
       {/* News Section */}
