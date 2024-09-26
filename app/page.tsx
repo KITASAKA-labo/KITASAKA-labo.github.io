@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { NEWSData } from './types/types'
 import Newscardlist from './components/newslist/Newscardlist'
 import prisma from '../lib/prismaClient'
+import topImage1 from './images/top/topimg1.png'
 
 async function getNewsData() {
   const newsData = await prisma.news.findMany()
@@ -22,7 +23,7 @@ export default async function Home() {
         </div>
         <div id="top1" className="absolute top-0 left-0 w-full z-100">
           <Image
-            src="./images/top/topimg1.png"
+            src={topImage1}
             alt="Top image 1"
             layout="fill"
             objectFit="cover"
