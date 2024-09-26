@@ -43,11 +43,12 @@ export default function Component() {
                   href="#labo"
                   className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 transition duration-150 ease-in-out h-full"
                 >
+                  
                   STUDY
                 </Link>
                 {activeMenu === 'study' && (
                   <div className="absolute left-0 top-full mt-1 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
-                    <Link href="./gararry.html?cat=study" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">研究一覧</Link>
+                    <Link href="../../Gallery" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">研究一覧</Link>
                     <Link href="./gararry.html?cat=production" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">制作一覧</Link>
                     <Link href="./news.html" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">活動情報</Link>
                     <Link href="work.html" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">成果一覧</Link>
