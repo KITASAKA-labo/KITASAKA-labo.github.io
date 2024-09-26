@@ -20,7 +20,7 @@ export default async function Home() {
           <h1 className="text-4xl md:text-6xl font-bold mb-2">北坂研究室</h1>
           <h3 className="text-xl md:text-2xl">Medical Image Processing Laboratory</h3>
         </div>
-        <div id="top1" className="absolute top-0 left-0 w-full z-5">
+        <div id="top1" className="absolute top-0 left-0 w-full z-100">
           <Image
             src="./images/top/topimg1.png"
             alt="Top image 1"
