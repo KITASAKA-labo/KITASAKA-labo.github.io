@@ -23,7 +23,7 @@ export default async function Home() {
           />
         </div>
 
-        <div className="relative w-full h-90vh mt-24">
+        <div className="relative w-full h-90vh mt-24 align-items:center">
           <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg">STUDY</h2>
           <div className="w-1/2 h-40vh ml-50 mt-8 mb-8 mr-150 overflow-y-auto">
             1号館6階に研究室があるのでぜひ遊びに来てください！
