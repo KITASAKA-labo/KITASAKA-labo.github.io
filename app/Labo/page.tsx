@@ -41,9 +41,8 @@ export default async function Home() {
         </div>
 
         {/* スクロールボタン */}
-        <div className="fixed right-3vw bottom-5vh text-center">
+        <div className="absolute fixed right-3vw bottom-5vh text-center">
           <button className="mb-2 cursor-pointer">↑</button>
-          <button className="cursor-pointer">↓</button>
         </div>
 
       {/* フッター */}
