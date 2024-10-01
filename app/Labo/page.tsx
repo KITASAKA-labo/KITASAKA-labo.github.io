@@ -39,18 +39,6 @@ export default async function Home() {
           {/* メンバー情報の表示ロジックは別途実装が必要 */}
           <div className="absolute w-60vw h-40vh bg-gray-200 bg-opacity-80 top-15 right-0 -z-10"></div>
         </div>
-
-      {/* フッター */}
-      <footer className="w-full h-40vh border-t border-gray-300 text-center mt-36 pt-5 text-black">
-        <div className="mt-24">
-          <ul className="mb-12">
-            <li className="mb-2"><Link href="./index.html" className="text-black hover:text-blue-400">HOME</Link></li>
-            <li className="mb-2"><Link href="./gararry.html" className="text-black hover:text-blue-400">研究・制作</Link></li>
-            <li className="mb-2"><Link href="#" className="text-black hover:text-blue-400">お問い合わせ</Link></li>
-          </ul>
-          <p>© 2024 医用画像処理研究室.</p>
-        </div>
-      </footer>
       </main>
     )
 }
