@@ -47,6 +47,10 @@ export default async function Home() {
           深層学習を利用した豚肺疾患の検出及び鑑別に関する研究や、パノラマビジョンシステムを利用した胸腔鏡手術支援に関する研究、パターン認識技術を駆使したアプリ制作などを行っています
         </div>
         <div className="absolute top-0 left-0 w-3/5 h-[40vh] bg-gray-200 bg-opacity-80 -z-10"></div>
+        <div className="text-right mr-[10%] mt-8">
+          <Link href="./Labo" className="text-xl font-semibold hover:text-blue-500 transition-colors">See more→</Link>
+        </div>
+
       </section>
 
       {/* Scroll Buttons */}
