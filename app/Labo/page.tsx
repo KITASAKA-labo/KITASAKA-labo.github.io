@@ -5,19 +5,22 @@ import prisma from '../../lib/prismaClient'
 export default async function Home() {
 
   return (
-      <main className="pt-20">
+      <main className="flex min-h-screen flex-col items-center justify-between p-6 md:p-24">
         {/* 見出しタイトル */}
-        <div className="relative w-full h-screen flex items-center justify-center">
-          <div className="absolute w-2/5 text-6xl text-white filter drop-shadow-lg left-32 z-10">
-            <h1>北坂研究室</h1>
-            <h3 className="text-3xl">Medical Image Processing Laboratory</h3>
-          </div>
-          <div className="absolute inset-0 bg-black bg-opacity-30 z-20"></div>
-          <div className="absolute inset-0 z-0">
-            <Image src="/images/top/topimg1.png" alt="" layout="fill" objectFit="cover" className="animate-slide-1" />
-            <Image src="/images/top/topimg2.png" alt="" layout="fill" objectFit="cover" className="animate-slide-2" />
-            <Image src="/images/top/topimg3.png" alt="" layout="fill" objectFit="cover" className="animate-slide-3" />
-          </div>
+        <div id="bodyTitle" className="relative z-10 flex flex-col items-center justify-center h-screen text-white z-2">
+        <div className="Title text-center mb-8">
+          <h1 className="text-4xl md:text-12xl font-bold mb-2">北坂研究室</h1>
+          <h3 className="text-xl md:text-6xl ">Medical Image Processing Laboratory</h3>
+        </div>
+        </div>
+        <div id="top1" className="absolute top-0 left-0 w-screen h-screen z-1">
+          <Image
+            src={"https://github.com/KITASAKA-labo/KITASAKA-labo.github.io/blob/main/app/images/top/topimg1.png?raw=true"}
+            alt="Top image 1"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
         </div>
 
         {/* 研究室紹介 */}
