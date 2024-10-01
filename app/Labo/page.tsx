@@ -15,7 +15,7 @@ export default async function Home() {
         </div>
         <div id="top1" className="absolute top-0 left-0 w-screen h-screen z-1">
           <Image
-            src={"https://github.com/KITASAKA-labo/KITASAKA-labo.github.io/blob/main/app/images/top/topimg1.png?raw=true"}
+            src={"https://github.com/KITASAKA-labo/KITASAKA-labo.github.io/blob/main/public/images/top/topimg1.png?raw=true"}
             alt="Top image 1"
             layout="fill"
             objectFit="cover"
