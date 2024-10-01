@@ -15,7 +15,7 @@ export default function Component() {
             <Link href="/contact" className="block hover:text-blue-500 transition-colors">お問い合わせ</Link>
           </nav>
         </div>
-        <p className="text-sm text-gray-600 padding-bottom:50px">© 2024 医用画像処理研究室.</p>
+        <p className="text-sm text-gray-600">© 2024 医用画像処理研究室.</p>
         
       </footer>
   )
