@@ -6,7 +6,7 @@ export default async function Home() {
 
   return (
       <main className="flex min-h-screen flex-col items-center justify-between p-6 md:p-24">
-        
+
         <div id="bodyTitle" className="relative z-10 flex flex-col items-center justify-center h-screen text-white z-2">
         <div className="Title text-center mb-8">
           <h1 className="text-4xl md:text-12xl font-bold mb-2">北坂研究室</h1>
@@ -26,7 +26,7 @@ export default async function Home() {
         <div className="relative w-full h-90vh mt-24">
           <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg">STUDY</h2>
           <div className="w-1/2 h-40vh ml-50 mt-8 mb-8 mr-150 overflow-y-auto">
-            深層学習を利用した豚肺疾患の検出及び鑑別に関する研究や、パノラマビジョンシステムを利用した胸腔鏡手術支援に関する研究、パターン認識技術を駆使したアプリ制作などを行っています
+            1号館6階に研究室があるのでぜひ遊びに来てください！
           </div>
           {/* 処理 */}
           <div className="absolute w-60vw h-40vh bg-gray-200 bg-opacity-80 top-0 left-0 -z-10"></div>
