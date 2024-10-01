@@ -15,7 +15,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-6 md:p-24">
       <div id="thst" className="text-center pt-24">
-        <div className="text-left px-[10%]">
+        <div className="text-left px-[100%]">
           <h2 className="text-4xl font-bold mb-8 filter drop-shadow-[5px_5px_5px_#426181]">研究一覧</h2>
         </div>
         <Gallerylist galleryData={galleryData}/>
