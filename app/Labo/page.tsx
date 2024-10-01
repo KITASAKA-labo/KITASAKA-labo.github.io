@@ -5,9 +5,6 @@ import prisma from '../../lib/prismaClient'
 export default async function Home() {
 
   return (
-    <div className="relative w-full min-h-screen overflow-hidden">
-
-      {/* メインコンテンツ */}
       <main className="pt-20">
         {/* 見出しタイトル */}
         <div className="relative w-full h-screen flex items-center justify-center">
@@ -45,7 +42,6 @@ export default async function Home() {
           <button className="mb-2 cursor-pointer">↑</button>
           <button className="cursor-pointer">↓</button>
         </div>
-      </main>
 
       {/* フッター */}
       <footer className="w-full h-40vh border-t border-gray-300 text-center mt-36 pt-5 text-black">
@@ -58,6 +54,6 @@ export default async function Home() {
           <p>© 2024 医用画像処理研究室.</p>
         </div>
       </footer>
-    </div>
-  );
+      </main>
+    );
 }
