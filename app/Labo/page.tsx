@@ -40,11 +40,6 @@ export default async function Home() {
           <div className="absolute w-60vw h-40vh bg-gray-200 bg-opacity-80 top-15 right-0 -z-10"></div>
         </div>
 
-        {/* スクロールボタン */}
-        <div className="absolute fixed right-3vw bottom-5vh text-center">
-          <button className="mb-2 cursor-pointer">↑</button>
-        </div>
-
       {/* フッター */}
       <footer className="w-full h-40vh border-t border-gray-300 text-center mt-36 pt-5 text-black">
         <div className="mt-24">

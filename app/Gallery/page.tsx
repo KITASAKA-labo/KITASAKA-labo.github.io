@@ -21,25 +21,6 @@ export default async function Home() {
         <Gallerylist galleryData={galleryData}/>
       </div>
 
-      {/* <div className="bottun fixed right-[3vw] bottom-[5vh] text-center">
-        <button
-          id="upBtn"
-          className="w-10 h-10 mb-2 bg-gray-800 text-white rounded-full cursor-pointer hover:bg-gray-700 transition-colors"
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          aria-label="ページ上部へスクロール"
-        >
-          ↑
-        </button>
-        <button
-          id="downBtn"
-          className="w-10 h-10 bg-gray-800 text-white rounded-full cursor-pointer hover:bg-gray-700 transition-colors"
-          onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
-          aria-label="ページ下部へスクロール"
-        >
-          ↓
-        </button>
-      </div> */}
-
       {/* Footer */}
       <footer className="w-full mt-36 pt-8 border-t border-gray-300 text-center">
         <div className="mb-24">
