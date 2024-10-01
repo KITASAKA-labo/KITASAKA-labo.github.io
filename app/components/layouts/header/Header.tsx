@@ -24,7 +24,7 @@ export default function Component() {
   }
 
   return (
-    <nav className="fixed w-full bg-white border-b border-gray-300 z-20">
+    <nav className="fixed w-100 bg-white border-b border-gray-300 z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
