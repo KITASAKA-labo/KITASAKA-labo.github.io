@@ -53,12 +53,6 @@ export default async function Home() {
 
       </section>
 
-      {/* Scroll Buttons */}
-      <div className="fixed right-[3vw] bottom-[5vh] space-y-2">
-        <button id="upBtn" className="bg-gray-200 p-2 rounded-full hover:bg-gray-300 transition-colors">↑</button>
-        <button id="downBtn" className="bg-gray-200 p-2 rounded-full hover:bg-gray-300 transition-colors">↓</button>
-      </div>
-
       {/* Footer */}
       <footer className="w-full mt-36 pt-8 border-t border-gray-300 text-center">
         <div className="mb-24">
