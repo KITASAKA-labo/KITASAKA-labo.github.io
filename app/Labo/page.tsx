@@ -1,27 +1,8 @@
-'use client'
-
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Home() {
-  const [isNavHidden, setIsNavHidden] = useState(false);
-  const [isStudyMenuOpen, setIsStudyMenuOpen] = useState(false);
-  const [isSchoolMenuOpen, setIsSchoolMenuOpen] = useState(false);
-
-  useEffect(() => {
-    // ナビゲーションの表示/非表示の制御
-    let lastScrollY = window.pageYOffset;
-
-    const handleScroll = () => {
-      const currentScrollY = window.pageYOffset;
-      setIsNavHidden(currentScrollY > lastScrollY);
-      lastScrollY = currentScrollY;
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+export default async function Home() {
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden">
