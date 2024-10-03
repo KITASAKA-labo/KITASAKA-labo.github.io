@@ -25,6 +25,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Create .env    
+              run: echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> .env
   # Build job
   build:
     runs-on: ubuntu-latest
