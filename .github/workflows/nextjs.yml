@@ -25,17 +25,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  create:
-    name: creat
-    runs-on: ubuntu-latest
-    steps:
-     - uses: actions/checkout@v3
-     - uses: subosito/flutter-action@v2.3.0
-     with:
-      flutter-version: '3.16.9'
-       - name: Create .env    
-            run: echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> .env
-
   # Build job
   build:
     runs-on: ubuntu-latest
