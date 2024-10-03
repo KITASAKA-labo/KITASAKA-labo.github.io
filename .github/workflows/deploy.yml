@@ -3,26 +3,12 @@ on:
   push:
     branches: ["main"]
 jobs:
-  deploy:
+  create-env-file:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Next.js latest 
-        uses: actions/setup-node@v1
-        with:
-          node-version: latest
-      - name: install
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Create .env file
         run: |
-          yarn install
-      - name: build
-        run: |
-          yarn build
-        env:
-          GITHUB_PAGES: true
-      - name: export
-        run: |
-          yarn export
-          touch out/.nojekyll
-      - name: deploy
-          id: deploy
-          echo: ${{ secrets.DATABASE_URL }} >> .env
+          echo "DATABASE_URL=${{secrets.DATABASE_URL}}" >> .env
+      
