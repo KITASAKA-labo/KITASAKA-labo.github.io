@@ -53,8 +53,10 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-      - name: Create .env
-          run: echo "CLIENT_ID=${{ secrets.CLIENT_ID }}" >> .env
+
+      - name: Create .env    
+          run: echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> .env
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
