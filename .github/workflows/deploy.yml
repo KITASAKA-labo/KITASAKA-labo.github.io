@@ -24,8 +24,5 @@ jobs:
           yarn export
           touch out/.nojekyll
       - name: deploy
-        uses: peaceiris/actions-gh-pages@v2.3.1
-        env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }} >> .env
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./out
+          id: deploy
+          echo: ${{ secrets.DATABASE_URL }} >> .env
