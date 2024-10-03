@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js 12
+      - name: Use Next.js latest 
         uses: actions/setup-node@v1
         with:
           node-version: 12
