@@ -27,6 +27,6 @@ jobs:
       - name: deploy
         uses: peaceiris/actions-gh-pages@v2.3.1
         env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }} >> .env
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./out
