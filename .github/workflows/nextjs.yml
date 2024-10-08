@@ -25,19 +25,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  set-env:
-    uses: ./.github/workflows/set-env.yml
   # Build job
   build:
-    needs: set-env
     runs-on: ubuntu-latest
-    steps:  
-
-# jobs:
-  
-#   build:
-#     runs-on: ubuntu-latest
-#     steps:
+    steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Detect package manager
@@ -80,25 +71,10 @@ jobs:
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
-      # - name: Install dependencies
-      #   run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-      # - name: Build with Next.js
-      #   run: ${{ steps.detect-package-manager.outputs.runner }} next build
-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-
-      - name: Generate Prisma Client
-        run: npx prisma generate
-        env:
-          DATABASE_URL: ${{ env.DATABASE_URL }}
-
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
-        env:
-          DATABASE_URL: ${{ env.DATABASE_URL }}
-
-          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -114,4 +90,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4     
+        uses: actions/deploy-pages@v4
