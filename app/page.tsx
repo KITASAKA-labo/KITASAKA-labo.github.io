@@ -8,7 +8,7 @@ async function getNewsData() {
   const newsData = await prisma.news.findMany()
   return newsData
 }
-
+ 
 
 export default async function Home() {
   const newsData = await getNewsData()
