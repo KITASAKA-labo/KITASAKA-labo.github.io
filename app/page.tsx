@@ -9,6 +9,7 @@ async function getNewsData() {
   return newsData
 }
 
+
 export default async function Home() {
   const newsData = await getNewsData()
 
