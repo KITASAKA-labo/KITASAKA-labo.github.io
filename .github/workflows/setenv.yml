@@ -1,4 +1,4 @@
-name: Set Environment Variables
+name: set env
 
 on:
   workflow_call:
@@ -7,5 +7,5 @@ jobs:
   set-env:
     runs-on: ubuntu-latest
     steps:
-      - name: Set DATABASE_URL
+      - name: set DATABASE_URL
         run: echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> $GITHUB_ENV
