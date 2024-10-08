@@ -1,9 +1,0 @@
-name: create-env
-  on:
-    push:
-    branches: ["main"]
-  jobs:
-    build_and_preview:
-      runs-on: ubuntu-latest
-      env:
-        DATABASE_URL: ${{secrets.DATABASE_URL}}
