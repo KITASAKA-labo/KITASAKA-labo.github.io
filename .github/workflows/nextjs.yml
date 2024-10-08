@@ -23,13 +23,8 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-    
-jobs:
-  build_and_preview:
-      runs-on: ubuntu-latest
-      env:
-        DATABASE_URL: ${{secrets.DATABASE_URL}}
 
+jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
