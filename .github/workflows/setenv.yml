@@ -1,11 +1,27 @@
-name: set env
+name: Create .env file
 
 on:
-  workflow_call:
+  push:
+    branches:
+      - main  # メインブランチにプッシュされたときに実行
 
 jobs:
-  set-env:
+  create-env:
     runs-on: ubuntu-latest
     steps:
-      - name: set DATABASE_URL
-        run: echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> $GITHUB_ENV
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create .env file
+        run: |
+          echo "NEXT_PUBLIC_SUPABASE_URL=${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}" >> .env
+          echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}" >> .env
+          echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> .env
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.email "github-actions@example.com"
+          git config --global user.name "GitHub Actions"
+          git add .env
+          git commit -m "Update .env file" || exit 0
+          git push
