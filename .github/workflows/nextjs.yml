@@ -30,13 +30,32 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       GITHUB_OUTPUT: ${{ steps.setenv.outputs.GITHUB_OUTPUT }}
+    env:
+      DATABASE_URL: ${{secrets.DATABASE_URL}}
     steps:
-      - name: Set environment variables
-        run: echo "::add-mask::NEXT_PUBLIC_SUPABASE_URL=${{secrets.NEXT_PUBLIC_SUPABASE_URL}}" >> .env
-      - name: Set environment variables
-        run: echo "::add-mask::NEXT_PUBLIC_SUPABASE_ANON_KEY=${{secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY}}" >> .env
-      - name: Set environment variables
-        DATABASE_URL: ${{secrets.DATABASE_URL}}
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Generate Prisma Client
+        run: |
+          echo "DATABASE_URL=\"$DATABASE_URL\"" > .env
+          npx prisma generate
+          
+      - name: Run migrations
+        run: npx prisma migrate deploy
+      # - name: Set environment variables
+      #   run: echo "NEXT_PUBLIC_SUPABASE_URL=${{secrets.NEXT_PUBLIC_SUPABASE_URL}}" >> .env
+      # - name: Set environment variables
+      #   run: echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=${{secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY}}" >> .env
+      # - name: Set environment variables
+        
         
 
   # Build job
