@@ -32,11 +32,11 @@ jobs:
       GITHUB_OUTPUT: ${{ steps.setenv.outputs.GITHUB_OUTPUT }}
     steps:
       - name: Set environment variables
-        run: echo "NEXT_PUBLIC_SUPABASE_URL=${{secrets.NEXT_PUBLIC_SUPABASE_URL}}" >> .env
+        run: echo "::add-mask::NEXT_PUBLIC_SUPABASE_URL=${{secrets.NEXT_PUBLIC_SUPABASE_URL}}" >> .env
       - name: Set environment variables
-        run: echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=${{secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY}}" >> .env
+        run: echo "::add-mask::NEXT_PUBLIC_SUPABASE_ANON_KEY=${{secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY}}" >> .env
       - name: Set environment variables
-        run: echo "DATABASE_URL=${{secrets.DATABASE_URL}}" >> .env
+        run: echo "::add-mask::DATABASE_URL=${{secrets.DATABASE_URL}}" >> .env
 
   # Build job
   build:
