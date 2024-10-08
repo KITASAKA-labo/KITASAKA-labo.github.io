@@ -36,7 +36,7 @@ jobs:
       - name: Set environment variables
         run: echo "::add-mask::NEXT_PUBLIC_SUPABASE_ANON_KEY=${{secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY}}" >> .env
       - name: Set environment variables
-        run: echo "::add-mask::DATABASE_URL=${{secrets.DATABASE_URL}}" >> .env
+        run: DATABASE_URL=${{secrets.DATABASE_URL}} >> .env
 
   # Build job
   build:
