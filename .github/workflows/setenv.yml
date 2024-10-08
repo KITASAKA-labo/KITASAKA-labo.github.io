@@ -3,7 +3,7 @@ name: Create .env file
 on:
   push:
     branches:
-      - main  # メインブランチにプッシュされたときに実行
+      - main 
 
 jobs:
   create-env:
@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }} 
 
       - name: Create .env file
         run: |
