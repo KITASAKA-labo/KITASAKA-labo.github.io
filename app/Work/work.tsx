@@ -23,19 +23,6 @@ export default function Home() {
         <div id="upBtn" className="cursor-pointer mb-2">↑</div>
         <div id="downBtn" className="cursor-pointer">↓</div>
       </div>
-
-      <footer id="footer" className="w-full h-[40vh] border-t border-gray-300 text-center mt-36 pt-5 text-black">
-        <div className="foottext w-full h-24 mt-24">
-          <div className="footerlink mb-8">
-            <ul className="list-none">
-              <li className="mb-2"><Link href="./index.html" className="text-black no-underline">HOME</Link></li>
-              <li className="mb-2"><Link href="./gararry.html" className="text-black no-underline">研究・制作</Link></li>
-              <li><Link href="" className="text-black no-underline">お問い合わせ</Link></li>
-            </ul>
-          </div>
-          <p>© 2024 医用画像処理研究室.</p>
-        </div>
-      </footer>
     </main>
   )
 }
