@@ -5,8 +5,8 @@ import { useState, useEffect } from 'react'
 export default function Home() {
 
   return (
-    <div className="main relative w-full min-h-screen overflow-hidden">
-        
+    <main className="flex min-h-screen flex-col items-center justify-between p-6 md:p-24">
+
       <div id="publications" className="w-full mt-24">
         <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg">成果一覧</h2>
         <div id="publications_b" className="text-center mt-16">
@@ -36,6 +36,6 @@ export default function Home() {
           <p>© 2024 医用画像処理研究室.</p>
         </div>
       </footer>
-    </div>
+    </main>
   )
 }
