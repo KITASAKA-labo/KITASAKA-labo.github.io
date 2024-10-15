@@ -32,7 +32,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div id="news_g" className="container mx-auto mt-20 px-4">
+      <div id="news_g" className="container w-100vh mx-auto mt-20 px-4">
         <h2 className="text-4xl font-bold mb-10">News</h2>
         <ul id="news_garrary" className="w-[100%] space-y-6 item-center">
           <NewsGcardlist newsData={newsData}/>
