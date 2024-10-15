@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "[愛知工業大学]北坂研究室WEBサイト",
-  description: "Created by kitasaka.lab",
+  description: "愛知工業大学 医用画像処理研究室の公式WEBサイト",
 };
 
 export default function RootLayout({
