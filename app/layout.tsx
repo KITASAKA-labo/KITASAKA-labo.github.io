@@ -7,7 +7,7 @@ import Footer from "./components/layouts/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "[愛知工業大学]北坂研究室WEBサイト",
+  title: "[医用画像処理研究室]北坂研究室WEBサイト",
   description: "愛知工業大学 医用画像処理研究室の公式WEBサイト",
 };
 
