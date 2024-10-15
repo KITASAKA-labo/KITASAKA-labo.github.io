@@ -7,7 +7,7 @@ import Footer from "./components/layouts/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "KITASAKA.lab WebSite",
+  title: "[愛知工業大学]北坂研究室WEBサイト",
   description: "Created by kitasaka.lab",
 };
 
