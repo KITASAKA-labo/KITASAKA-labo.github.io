@@ -16,7 +16,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-6 md:p-24">
 
-      <div id="bodyTitle" className="relative z-10 flex flex-col items-left justify-center h-screen text-white z-2">
+      <div id="bodyTitle" className="relative z-10 flex flex-col items-left justify-center h-screen text-white z-2 content-left">
         <div className="Title text-left mb-8">
           <h1 className="text-9xl md:text-8xl font-bold mb-2">北坂研究室</h1>
           <h3 className="text-8 lmd:text-2xl">Medical Image Processing Laboratory</h3>
