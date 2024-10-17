@@ -18,8 +18,8 @@ export default async function Home() {
 
       <div id="bodyTitle" className="relative z-10 flex flex-col flex-start items-left justify-center h-screen w-screen text-white z-2 px-20">
         <div className="Title text-left mb-8">
-          <h1 className="text-[12rem] md:text-8xl font-bold mb-2">北坂研究室</h1>
-          <h3 className="text-xl lmd:text-2xl">Medical Image Processing Laboratory</h3>
+          <h1 className="text-9xl md:text-8xl font-bold mb-2">北坂研究室</h1>
+          <h3 className="text-6xl lmd:text-2xl">Medical Image Processing Laboratory</h3>
         </div>
         </div>
         <div id="top1" className="absolute top-0 left-0 w-screen h-screen z-1">
