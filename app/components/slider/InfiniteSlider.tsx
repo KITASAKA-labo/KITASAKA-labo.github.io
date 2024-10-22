@@ -12,11 +12,11 @@ interface SlideProps {
 }
 
 const slides: SlideProps[] = [
-  { image: '/placeholder.svg?height=300&width=400', title: 'Slide 1' },
-  { image: '/placeholder.svg?height=300&width=400', title: 'Slide 2' },
-  { image: '/placeholder.svg?height=300&width=400', title: 'Slide 3' },
-  { image: '/placeholder.svg?height=300&width=400', title: 'Slide 4' },
-  { image: '/placeholder.svg?height=300&width=400', title: 'Slide 5' },
+  { image: '../../../public/images/studyimg1.jpg', title: 'Slide 1' },
+  { image: '', title: 'Slide 2' },
+  { image: '', title: 'Slide 3' },
+  { image: '', title: 'Slide 4' },
+  // { image: '/placeholder.svg?height=300&width=400', title: 'Slide 5' },
 ]
 
 const InfiniteSlider = () => {
@@ -52,7 +52,14 @@ const InfiniteSlider = () => {
         {slides.map((slide, index) => (
           <div key={index} className="px-2">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <Image src={slide.image} alt={slide.title} className="w-full h-48 object-cover" />
+              <Image 
+                src={slide.image} 
+                alt={slide.title} 
+                width={400}
+                height={300}
+                layout="responsive"
+                objectFit="cover"
+              />
               <div className="p-4">
                 <h3 className="text-lg font-semibold text-gray-800">{slide.title}</h3>
               </div>
