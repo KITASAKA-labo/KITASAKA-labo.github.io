@@ -53,7 +53,14 @@ export default async function Home() {
         <div className="text-right mr-[10%] mt-8">
           <Link href="./Labo" className="text-xl font-semibold hover:text-blue-500 transition-colors">See more→</Link>
         </div>
+        <Image src=""
+          alt="labo image 1"
+          layout="fill"
+          objectFit="cover"
+          priority
+        />
       </section>
+
     </main>
   )
 }
