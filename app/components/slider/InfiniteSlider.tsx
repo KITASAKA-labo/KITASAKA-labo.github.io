@@ -12,7 +12,7 @@ interface SlideProps {
 }
 
 const slides: SlideProps[] = [
-  { image: '../../../public/images/studyimg1.jpg', title: 'Slide 1' },
+  { image: 'https://github.com/KITASAKA-labo/KITASAKA-labo.github.io/blob/main/public/images/studyimg1.jpg?raw=true', title: 'Slide 1' },
   { image: '', title: 'Slide 2' },
   { image: '', title: 'Slide 3' },
   { image: '', title: 'Slide 4' },
