@@ -52,7 +52,7 @@ const InfiniteSlider = () => {
         {slides.map((slide, index) => (
           <div key={index} className="px-2">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <Image src="" alt="im1" className="w-full h-48 object-cover" />
+              <Image src={slide.image} alt={slide.title} className="w-full h-48 object-cover" />
               <div className="p-4">
                 <h3 className="text-lg font-semibold text-gray-800">{slide.title}</h3>
               </div>
