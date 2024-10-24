@@ -50,8 +50,8 @@ const InfiniteSlider = () => {
     <div className="w-full max-w-8xl mx-auto px-4">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="px-2">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden px-15px">
+          <div key={index} className="px-2 py-[60px]">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <Image 
                 src={slide.image} 
                 alt={slide.title} 
