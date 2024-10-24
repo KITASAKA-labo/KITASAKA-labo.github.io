@@ -6,7 +6,7 @@ import InfiniteSlider from './components/slider/InfiniteSlider'
 import prisma from '../lib/prismaClient'
 
 async function getNewsData() {
-  const newsData = await prisma.news.findMany({take: 5})
+  const newsData = await prisma.news.findMany({take: 5, orderBy: {id: 'desc'}})
   return newsData
 }
  
