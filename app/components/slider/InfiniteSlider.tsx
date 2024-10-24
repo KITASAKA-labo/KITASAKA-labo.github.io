@@ -27,7 +27,7 @@ const InfiniteSlider = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
@@ -47,7 +47,7 @@ const InfiniteSlider = () => {
   }
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4">
+    <div className="w-full max-w-8xl mx-auto px-4">
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className="px-2">
