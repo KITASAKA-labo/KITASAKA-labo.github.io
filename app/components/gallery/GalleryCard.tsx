@@ -15,7 +15,7 @@ export const GalleryCard = ({galleryItems}: GalleryCardProps) => {
     <div className="gararry w-[250px] h-[405px] m-[30px] bg-[#c8c7c7] inline-block align-top">
               <div className="photo w-[250px] h-[150px] overflow-hidden">
                 <Image
-                  src={`/images/gararry/${img}`}
+                  src={`${img}`}
                   alt="`${title}`"
                   width={250}
                   height={150}

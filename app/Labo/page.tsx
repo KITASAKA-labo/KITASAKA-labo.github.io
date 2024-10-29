@@ -25,8 +25,8 @@ export default async function Home() {
 
         <div className="relative w-full h-90vh mt-24 align-items:center">
           <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg content-center">STUDY</h2>
-          <div className="text-lg w-1/2 h-40vh ml-50 mt-8 mb-8 mr-150 overflow-y-auto item-center">
-            1号館6階に研究室があるのでぜひ遊びに来てください！
+          <div className="w-1/2 ml-[200px] mt-8 mb-8 mr-[600px] overflow-y-auto h-[40vh] align-items:center">
+          1号館6階に研究室があるのでぜひ遊びに来てください！
           </div>
           <div className="absolute w-60vw h-40vh bg-gray-200 bg-opacity-80 top-0 left-0 -z-10">
           </div>
