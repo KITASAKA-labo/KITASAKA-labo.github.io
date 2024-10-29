@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { NEWSData } from './types/types'
 import Newscardlist from './components/newslist/Newscardlist'
-import InfiniteSlider from './components/slider/InfiniteSlider'
+import InfiniteSlider from './components/layouts/slider/InfiniteSlider'
 import prisma from '../lib/prismaClient'
 
 async function getNewsData() {
