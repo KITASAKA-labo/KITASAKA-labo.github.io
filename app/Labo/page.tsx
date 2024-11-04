@@ -34,6 +34,10 @@ export default async function Home() {
           <div className="absolute w-60vw h-40vh bg-gray-200 bg-opacity-80 top-0 left-0 -z-10"></div>
         </div>
 
+        {/* <div className="relative w-full mt-24">
+          <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg">MOVIE</h2> 
+          <div className="absolute w-60vw h-40vh bg-gray-200 bg-opacity-80 top-15 right-0 -z-10"></div>
+        </div> */}
         
         <div className="relative w-full mt-24">
           <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg">MEMBER</h2>
