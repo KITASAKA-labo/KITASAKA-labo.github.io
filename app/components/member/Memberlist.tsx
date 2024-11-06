@@ -10,11 +10,11 @@ interface MemberProps {
 
 const Memberlist = ({memberData}: MemberProps) => {
   return (
-    <div id="member">
+    <section id="member">
         {memberData.map((memberItems: MEMBERData) => (
             <Member key={memberItems.id} memberItems={memberItems} />
         ))}
-    </div>
+    </section>
   )
 }
 

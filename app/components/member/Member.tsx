@@ -10,6 +10,8 @@ interface MemberProps {
 export const Member = ({memberItems}: MemberProps) => {
   const {id, graduation, number, name} = memberItems;
   return (
-    <div id="member"></div>
+    <div id="member">
+        <div id="membername">{name}</div>
+    </div>
   )
 }
