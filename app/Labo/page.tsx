@@ -3,8 +3,15 @@ import Link from 'next/link'
 import prisma from '../../lib/prismaClient'
 import Memberlist from '../components/member/Memberlist'
 
+function nowdate(){
+  const now = new Date();
+  const year = now.getFullYear();
+  return year
+}
+
 async function getMemberData() {
-  const memberData = await prisma.member.findMany()
+  const year = nowdate();
+  const memberData = await prisma.member.findMany();
   return memberData
 }
 
@@ -37,18 +44,12 @@ export default async function Home() {
           </div>
           <div className="absolute w-60vw h-40vh bg-gray-200 bg-opacity-80 top-0 left-0 -z-10">
           </div>
-          {/* 処理 */}
           <div className="absolute w-60vw h-40vh bg-gray-200 bg-opacity-80 top-0 left-0 -z-10"></div>
         </div>
-
-        {/* <div className="relative w-full mt-24">
-          <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg">MOVIE</h2> 
-          <div className="absolute w-60vw h-40vh bg-gray-200 bg-opacity-80 top-15 right-0 -z-10"></div>
-        </div> */}
         
         <div className="relative w-full mt-24">
           <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg">MEMBER</h2>
-          <Memberlist memberData={memberData} />
+          <div className='align-items:center'><Memberlist memberData={memberData} /></div>
           <div className="absolute w-60vw h-40vh bg-gray-200 bg-opacity-80 top-15 right-0 -z-10"></div>
         </div>
       </main>
