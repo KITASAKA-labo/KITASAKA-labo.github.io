@@ -77,7 +77,7 @@ export default async function Home() {
         
         <div className="relative w-full mt-24">
           <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg">MEMBER</h2>
-          <div id="members" className='text-center'>
+          <div id="members" className='text-center mt-5'>
             <div className='text-3xl font-bold align-middle'>B3(学部3年性)</div>
             <div className='align-items:center'><Memberlist memberData={memberData} /></div>
             <div className='text-3xl font-bold align-middle'>B4(学部4年性)</div>
