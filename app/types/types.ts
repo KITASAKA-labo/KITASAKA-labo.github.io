@@ -7,10 +7,17 @@ export interface NEWSData {
 }
 
 export interface GALLERYData {
-    id:       number,    
-    category: String,
-    year:     String,
-    title:    String,
-    content:  String,
-    img:      String
+  id:       number,    
+  category: String,
+  year:     String,
+  title:    String,
+  content:  String,
+  img:      String
+}
+
+export interface MEMBERData{
+  id:         number,
+  graduation: String,
+  number:     String,
+  name:       String,
 }

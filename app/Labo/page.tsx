@@ -1,8 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import prisma from '../../lib/prismaClient'
+import Memberlist from '../components/member/Memberlist'
+
+async function getMemberData() {
+  const memberData = await prisma.member.findMany()
+  return memberData
+}
 
 export default async function Home() {
+  const memberData = await getMemberData();
 
   return (
       <main className="flex min-h-screen flex-col items-center justify-between p-6 md:p-24">
@@ -41,7 +48,7 @@ export default async function Home() {
         
         <div className="relative w-full mt-24">
           <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg">MEMBER</h2>
-          {/* 処理 */}
+          <Memberlist memberData={memberData} />
           <div className="absolute w-60vw h-40vh bg-gray-200 bg-opacity-80 top-15 right-0 -z-10"></div>
         </div>
       </main>
