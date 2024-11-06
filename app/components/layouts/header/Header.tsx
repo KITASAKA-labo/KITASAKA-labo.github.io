@@ -51,7 +51,6 @@ export default function Component() {
                     <Link href="../../Gallery" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">研究一覧</Link>
                     <Link href="./gararry.html?cat=production" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">制作一覧</Link>
                     <Link href="../../News" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">活動情報</Link>
-                    <Link href="../../Work" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">成果一覧</Link>
                   </div>
                 )}
               </div>

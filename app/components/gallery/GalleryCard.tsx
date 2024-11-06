@@ -19,7 +19,7 @@ export const GalleryCard = ({galleryItems}: GalleryCardProps) => {
                   alt="`${title}`"
                   width={250}
                   height={150}
-                  className="w-full h-auto transition-all duration-1000 hover:scale-110"
+                  className="w-full h-auto transition-all duration-1000"
                 />
               </div>
               <div className="gtext w-[90%] h-[100px] mt-[30px] text-[1.1rem] mx-auto">
