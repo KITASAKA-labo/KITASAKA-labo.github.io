@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { NEWSData } from '@/app/types/types'
+import { Url } from 'url'
 
 interface NewsCardProps {
     newsItems: NEWSData;
@@ -13,7 +14,7 @@ export const NewsCard = ({newsItems}: NewsCardProps) => {
 
   return (
     <div className="w-48 h-[500px] m-5 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden group">
-        <Link href={url} rel="noopener noreferrer">
+        <Link href={url as unknown as Url} rel="noopener noreferrer">
             <div className="relative w-full h-48 overflow-hidden">
                 <Image src={img} alt="newsImage" layout="fill" objectFit="cover" className="group-hover:scale-110 transition-transform duration-300" />
             </div>

@@ -57,7 +57,7 @@ export default async function Home() {
         <InfiniteSlider />
       </section>
 
-      <div id="upbutton" className='flex'>↑</div>
+      {/* <div id="upbutton" className='flex'>↑</div> */}
       
     </main>
   )
