@@ -15,7 +15,7 @@ export const NewsCard = ({newsItems}: NewsCardProps) => {
     <div className="w-48 h-[500px] m-5 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden group">
         <Link href={url} rel="noopener noreferrer">
             <div className="relative w-full h-48 overflow-hidden">
-                <Image src={img} alt="" layout="fill" objectFit="cover" className="group-hover:scale-110 transition-transform duration-300" />
+                <Image src={img} alt="newsImage" layout="fill" objectFit="cover" className="group-hover:scale-110 transition-transform duration-300" />
             </div>
             <div className="p-4">
                 <div className="text-center font-semibold my-5">{day}</div>
