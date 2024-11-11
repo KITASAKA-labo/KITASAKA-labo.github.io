@@ -15,8 +15,8 @@ export const GalleryCard = ({galleryItems}: GalleryCardProps) => {
     <div className="gararry w-[250px] h-[405px] m-[30px] bg-[#c8c7c7] inline-block align-top">
               <div className="photo w-[250px] h-[150px] overflow-hidden">
                 <Image
-                  src={`${img}`}
-                  alt="`${title}`"
+                  src={img}
+                  alt={`${title}`}
                   width={250}
                   height={150}
                   className="w-full h-auto transition-all duration-1000"
