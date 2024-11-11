@@ -11,7 +11,7 @@ export const Member = ({memberItems}: MemberProps) => {
   const {id, graduation, number, name} = memberItems;
   return (
     <div id="member" className='align-items:center'>
-        <div id="membername" className='align-items:center'>{name}</div>
+        <div id="membername" className='align-items:center text-2xl'>{name}</div>
     </div>
   )
 }
