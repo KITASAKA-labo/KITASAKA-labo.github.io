@@ -11,11 +11,15 @@ export const GalleryCard = ({galleryItems}: GalleryCardProps) => {
   
   const {category, year, title, content, img} = galleryItems;
 
+  const imageUrl = img === 'none' || img === ''
+    ? 'https://github.com/KITASAKA-labo/KITASAKA-labo.github.io/blob/main/public/images/NoImage.png?raw=true'
+    : img;
+
   return (
     <div className="gararry w-[250px] h-[405px] m-[30px] bg-[#c8c7c7] inline-block align-top">
               <div className="photo w-[250px] h-[150px] overflow-hidden">
                 <Image
-                  src={img}
+                  src={imageUrl}
                   alt=""
                   width={250}
                   height={150}
