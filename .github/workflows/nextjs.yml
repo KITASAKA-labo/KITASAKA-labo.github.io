@@ -26,26 +26,26 @@ concurrency:
 
 jobs:
 # Set environment variables job
-#   setenv:
-#     runs-on: ubuntu-latest
-#     outputs:
-#       GITHUB_OUTPUT: ${{ steps.setenv.outputs.GITHUB_OUTPUT }}
-#     env:
-#       DATABASE_URL: ${{secrets.DATABASE_URL}}
-#     steps:
-#       - uses: actions/checkout@v4
-#       - name: Generate Prisma Client
-#         run: |
-#           echo "DATABASE_URL=\"$DATABASE_URL\"" > .env
-#           npx prisma generate
+  setenv:
+    runs-on: ubuntu-latest
+    outputs:
+      GITHUB_OUTPUT: ${{ steps.setenv.outputs.GITHUB_OUTPUT }}
+    env:
+      DATABASE_URL: ${{secrets.DATABASE_URL}}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate Prisma Client
+        run: |
+          echo "DATABASE_URL=\"$DATABASE_URL\"" > .env
+          npx prisma generate
           
-#       - name: Run migrations
-#         run: npx prisma migrate deploy
-#       # - name: Set environment variables
-#       #   run: echo "NEXT_PUBLIC_SUPABASE_URL=${{secrets.NEXT_PUBLIC_SUPABASE_URL}}" >> .env
-#       # - name: Set environment variables
-#       #   run: echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=${{secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY}}" >> .env
-#       # - name: Set environment variables
+      - name: Run migrations
+        run: npx prisma migrate deploy
+      # - name: Set environment variables
+      #   run: echo "NEXT_PUBLIC_SUPABASE_URL=${{secrets.NEXT_PUBLIC_SUPABASE_URL}}" >> .env
+      # - name: Set environment variables
+      #   run: echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=${{secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY}}" >> .env
+      # - name: Set environment variables
         
         
 
