@@ -39,8 +39,8 @@ jobs:
           echo "DATABASE_URL=\"$DATABASE_URL\"" > .env
           npx prisma generate
           
-      - name: Run migrations
-        run: npx prisma migrate deploy
+      # - name: Run migrations
+      #   run: npx prisma migrate deploy
       # - name: Set environment variables
       #   run: echo "NEXT_PUBLIC_SUPABASE_URL=${{secrets.NEXT_PUBLIC_SUPABASE_URL}}" >> .env
       # - name: Set environment variables
