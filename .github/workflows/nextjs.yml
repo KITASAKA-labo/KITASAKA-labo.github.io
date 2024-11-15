@@ -57,7 +57,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: setenv
-        run: echo "DATABASE_URL=${{postgresql://postgres.gaxzavrcvayqseffbfis:kitasakaLABO@aws-0-ap-northeast-1.pooler.supabase.com:5432/postgres}}"
+        run: echo "DATABASE_URL=${{secrets.DATABASE_URL}}"
       - name: Detect package manager
         id: detect-package-manager
         run: |
