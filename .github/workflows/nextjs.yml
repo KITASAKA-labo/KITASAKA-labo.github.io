@@ -57,9 +57,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: setenv
-        run: |
+        run:
             echo "DATABASE_URL=${{secrets.DATABASE_URL}}" >> .env
-            echo $DATABASE_URL
+            # echo $DATABASE_URL
       - name: Detect package manager
         id: detect-package-manager
         run: |
