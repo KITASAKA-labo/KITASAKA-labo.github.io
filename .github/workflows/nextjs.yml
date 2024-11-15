@@ -26,19 +26,19 @@ concurrency:
 
 jobs:
 # Set environment variables job
-  setenv:
-    runs-on: ubuntu-latest
-    outputs:
-      GITHUB_OUTPUT: ${{ steps.setenv.outputs.GITHUB_OUTPUT }}
-    env:
-      DATABASE_URL: ${{secrets.DATABASE_URL}}
-    steps:
-      - uses: actions/checkout@v4
-      - name: Generate Prisma Client
-        run: |
-          echo "using DATABASE_URL in script"
-          prisma schema.prisma
-          prismaClient.ts
+  # setenv:
+  #   runs-on: ubuntu-latest
+  #   outputs:
+  #     GITHUB_OUTPUT: ${{ steps.setenv.outputs.GITHUB_OUTPUT }}
+  #   env:
+  #     DATABASE_URL: ${{secrets.DATABASE_URL}}
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: Generate Prisma Client
+  #       run: |
+  #         echo "using DATABASE_URL in script"
+          
+        
           
       # - name: Run migrations
       #   run: npx prisma migrate deploy
@@ -56,6 +56,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: setenv
+        run: echo "DATABASE_URL=${{postgresql://postgres.gaxzavrcvayqseffbfis:kitasakaLABO@aws-0-ap-northeast-1.pooler.supabase.com:5432/postgres}}"
       - name: Detect package manager
         id: detect-package-manager
         run: |
