@@ -26,7 +26,7 @@ export const NewsCard = ({newsItems}: NewsCardProps) => {
             </div>
             <div className="p-4">
                 <div className="text-center font-semibold my-5">{day}</div>
-                <div className="text-sm mt-7 h-[200px] justify-center overflow-hidden">{news}</div>
+                <div className="text-sm mt-7 h-[200px] justify-center overflow-hidden text-center">{news}</div>
             </div>
         </Link>
     </div>
