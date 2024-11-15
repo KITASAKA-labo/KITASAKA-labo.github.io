@@ -10,6 +10,13 @@ interface GalleryCardProps {
 export const GalleryCard = ({galleryItems}: GalleryCardProps) => {
   
   const {category, year, title, content, img} = galleryItems;
+  let categoryText = '';
+
+  if(category === 'study') {
+    categoryText = '研究';
+  }else if(category === 'production') {
+    categoryText = '制作';
+  }
 
   const imageUrl = img === 'none' || img === ''
     ? 'https://github.com/KITASAKA-labo/KITASAKA-labo.github.io/blob/main/public/images/NoImage.png?raw=true'
@@ -28,6 +35,9 @@ export const GalleryCard = ({galleryItems}: GalleryCardProps) => {
               </div>
               <div className="gtext w-[90%] h-[100px] mt-[30px] text-[1.1rem] mx-auto">
                 {title}
+              </div>
+              <div className="gtext w-[90%] h-[100px] mt-[30px] text-[1.1rem] mx-auto font-bold">
+                {categoryText}
               </div>
               <div className="gbtex w-full h-[100px] mt-[30px] text-[0.9rem] px-4">
                 {content}
