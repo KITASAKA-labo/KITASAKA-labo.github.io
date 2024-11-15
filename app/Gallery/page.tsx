@@ -5,7 +5,7 @@ import Gallerylist from '../components/gallery/Gallerylist'
 import prisma from '../../lib/prismaClient'
 
 async function getGalleryData() {
-  const galleryData = await prisma.study.findMany()
+  const galleryData = await prisma.study.findMany({orderBy: {id: 'desc'}})
   return galleryData
 }
 

@@ -5,7 +5,7 @@ import NewsGcardlist from '../components/newsgallery/NewsGcardlist'
 import prisma from '../../lib/prismaClient'
 
 async function getNewsData() {
-  const newsData = await prisma.news.findMany()
+  const newsData = await prisma.news.findMany({orderBy: {id: 'desc'}})
   return newsData
 }
 
