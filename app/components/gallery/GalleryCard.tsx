@@ -36,10 +36,10 @@ export const GalleryCard = ({galleryItems}: GalleryCardProps) => {
               <div className="gtext w-[90%] h-[100px] mt-[30px] text-[1.1rem] mx-auto">
                 {title}
               </div>
-              <div className="gtext w-[90%] h-[100px] mt-[30px] text-[1.1rem] mx-auto font-bold">
+              <div className="gtext w-[90%] h-[100px] mt-[10px] text-[1.1rem] mx-auto font-bold">
                 {categoryText}
               </div>
-              <div className="gbtex w-full h-[100px] mt-[30px] text-[0.9rem] px-4">
+              <div className="gbtex w-full h-[100px] mt-[10px] text-[0.9rem] px-4">
                 {content}
               </div>
     </div>
