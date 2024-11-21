@@ -24,21 +24,7 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-jobs:
-# Set environment variables job
-  # setenv:
-  #   runs-on: ubuntu-latest
-  #   outputs:
-  #     GITHUB_OUTPUT: ${{ steps.setenv.outputs.GITHUB_OUTPUT }}
-  #   env:
-  #     DATABASE_URL: ${{secrets.DATABASE_URL}}
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - name: Generate Prisma Client
-  #       run: |
-  #         echo "using DATABASE_URL in script"
-        
-      
+jobs: 
   # Build job
   build:
     runs-on: ubuntu-latest
