@@ -40,7 +40,7 @@ export const GalleryCard = ({galleryItems}: GalleryCardProps) => {
                 {title}
               </div>
               <div className="gbtex w-full h-[70px] mt-[10px] text-[0.9rem] px-4">
-                {content}
+                {year}
               </div>
     </div>
   )
