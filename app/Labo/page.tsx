@@ -68,7 +68,8 @@ export default async function Home() {
         <div className="relative w-full h-90vh mt-24 align-items:center">
           <h2 className="text-4xl font-bold ml-[10%] filter drop-shadow-lg content-center">COMMENT</h2>
           <div className="w-1/2 ml-[200px] mt-8 mb-8 mr-[600px] overflow-y-auto h-[40vh] align-items:center">
-            1号館6階に研究室があるのでぜひ遊びに来てください！
+            医学にAIを使って貢献したいと考える方、ぜひ北坂研究室へ！
+            1号館6階に研究室があるので遊びに来てください！
           </div>
           <div className="absolute w-60vw h-40vh bg-gray-200 bg-opacity-80 top-0 left-0 -z-10">
           </div>
