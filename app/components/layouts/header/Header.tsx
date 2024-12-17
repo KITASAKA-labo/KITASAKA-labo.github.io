@@ -48,8 +48,8 @@ export default function Component() {
                 </Link>
                 {activeMenu === 'study' && (
                   <div className="absolute left-0 top-full mt-1 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
-                    <Link href="../../Gallery" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">研究一覧</Link>
-                    <Link href="./gararry.html?cat=production" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">制作一覧</Link>
+                    <Link href="../../Gallery_r" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">研究一覧</Link>
+                    <Link href="../../Gallery_p" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">制作一覧</Link>
                     <Link href="../../News" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">活動情報</Link>
                   </div>
                 )}
