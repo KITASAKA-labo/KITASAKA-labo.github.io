@@ -16,7 +16,7 @@ async function getGalleryData() {
   //   const galleryData = await prisma.study.findMany({orderBy: {id: 'desc'}, where:{ category: 'production'}})
   //   return galleryData
   // }
-  const galleryData = await prisma.study.findMany({orderBy: {id: 'desc'}, where:{ category: 'research'}})
+  const galleryData = await prisma.study.findMany({orderBy: {id: 'desc'}, where:{ category: 'study'}})
   
   return galleryData
 }
