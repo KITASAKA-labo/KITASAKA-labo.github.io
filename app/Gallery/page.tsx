@@ -6,7 +6,16 @@ import prisma from '../../lib/prismaClient'
 import { useRouter } from 'next/router';
 
 async function getGalleryData() {
-  const galleryData = await prisma.study.findMany({orderBy: {id: 'desc'}})
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const router = useRouter();
+  const { cat } = router.query; // idを取得
+  if(cat === 'r'){
+    const galleryData = await prisma.study.findMany({orderBy: {id: 'desc', category: 'research'}})
+  }else if(cat === 'p'){
+    const galleryData = await prisma.study.findMany({orderBy: {id: 'desc', category: 'production'}})
+  }else{
+    const galleryData = await prisma.study.findMany({orderBy: {id: 'desc'}})
+  }
   return galleryData
 }
 
