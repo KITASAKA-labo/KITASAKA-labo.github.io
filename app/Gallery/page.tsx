@@ -10,12 +10,14 @@ async function getGalleryData() {
   const router = useRouter();
   const { cat } = router.query; // idを取得
   if(cat === 'r'){
-    const galleryData = await prisma.study.findMany({orderBy: {id: 'desc', category: 'research'}})
+    const galleryData = await prisma.study.findMany({orderBy: {id: 'desc'}, where:{ category: 'research'}})
+    return galleryData
   }else if(cat === 'p'){
-    const galleryData = await prisma.study.findMany({orderBy: {id: 'desc', category: 'production'}})
-  }else{
-    const galleryData = await prisma.study.findMany({orderBy: {id: 'desc'}})
+    const galleryData = await prisma.study.findMany({orderBy: {id: 'desc'}, where:{ category: 'production'}})
+    return galleryData
   }
+  const galleryData = await prisma.study.findMany({orderBy: {id: 'desc'}})
+  
   return galleryData
 }
 
