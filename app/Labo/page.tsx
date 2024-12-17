@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import prisma from '../../lib/prismaClient'
 import Memberlist from '../components/member/Memberlist'
+import { useRouter } from 'next/router';
 
 function nowdate(){
   const now = new Date();
