@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { GALLERYData } from '../types/types'
 import Gallerylist from '../components/gallery/Gallerylist'
 import prisma from '../../lib/prismaClient'
+import { useRouter } from 'next/router';
 
 async function getGalleryData() {
   const galleryData = await prisma.study.findMany({orderBy: {id: 'desc'}})
