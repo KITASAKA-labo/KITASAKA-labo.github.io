@@ -70,7 +70,7 @@ export default async function Home() {
           <div className="w-1/2 ml-[200px] mt-8 mb-8 mr-[600px] overflow-y-auto h-[40vh] align-items:center">
             医学にAI・画像処理技術を使って貢献したいと考える方、ぜひ北坂研究室へ！<br />
             北坂研究室は就活がしやすい研究室ですので、就活をしっかりしたい方ぜひ！<br />
-            1号館6階に研究室があるので遊びに来てください！
+            14号館6階に研究室があるので遊びに来てください！
           </div>
           <div className="absolute w-60vw h-40vh bg-gray-200 bg-opacity-80 top-0 left-0 -z-10">
           </div>
